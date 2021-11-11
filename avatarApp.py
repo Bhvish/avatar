@@ -8,11 +8,6 @@ from random import randrange
 st.markdown("""
 # Avatar Maker
 This app allows you to build your own custom avatars based on modular templates provided herein.
-**Credits**
-- App inspired by the [avataaars generator](https://getavataaars.com) by [Fang-Pen Lin](https://twitter.com/fangpenlin)
-- Built with [py_avataaars](https://pypi.org/project/py-avataaars/) library by [Krzysztof Ebert](https://github.com/kebu)
-- Avatar is based on Sketch library [Avataaars](https://avataaars.com) designed by [Pablo Stanley](https://twitter.com/pablostanley).
----
 """)
 
 # Sidebar menu for customizing the avatar
@@ -159,3 +154,12 @@ rendered_avatar = avatar.render_png_file('avatar.png')
 image = Image.open('avatar.png')
 st.image(image)
 st.markdown(imagedownload('avatar.png'), unsafe_allow_html=True)
+
+st.markdown("""
+**Credits**
+- App inspired by the [avataaars generator](https://getavataaars.com) by [Fang-Pen Lin](https://twitter.com/fangpenlin)
+- Built with [py_avataaars](https://pypi.org/project/py-avataaars/) library by [Krzysztof Ebert](https://github.com/kebu)
+- Avatar is based on Sketch library [Avataaars](https://avataaars.com) designed by [Pablo Stanley](https://twitter.com/pablostanley).
+---
+""")
+
